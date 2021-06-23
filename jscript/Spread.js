@@ -21,7 +21,7 @@ function addData(...data){
 console.log(addData(10,20,30,40,60,70));
 
 const person = {
-    name : "name1",
+    name : "name1",  
     email : "name1@gmail.com"
 }
 
