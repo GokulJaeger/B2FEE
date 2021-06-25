@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import MyLabelClass from "./components/MyLabelClass";
 import MyLabelFunction from "./components/MyLabelFunction";
+import MyUserRegistration from "./components/MyUserRegistration";
 
 function App() {
   const dte = new Date(2000, 4, 4);
@@ -23,13 +24,15 @@ function App() {
 
   return (
     <div>
-      <h1 className="header">My First React on {value}</h1>
+      {/* <h1 className="header">My First React on {value}</h1> */}
       {/* <hr />
-      <MyLabelClass /> */}
+      <MyLabelClass />
       <hr />
       <MyLabelFunction data={users} ts={dte} ln={labelName}/>
       <hr />
-      <MyLabelFunction data={ssusers} ts={dte} ln={labelName}/>
+      <MyLabelFunction data={ssusers} ts={dte} ln={labelName}/> */}
+
+      <MyUserRegistration/>
     </div>
     //React.createElement("div",{},React.createElement("h1",{className:'header'},"My First React-".concat(value)))
   );
