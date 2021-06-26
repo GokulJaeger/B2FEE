@@ -4,6 +4,8 @@ import "./App.css";
 import MyLabelClass from "./components/MyLabelClass";
 import MyLabelFunction from "./components/MyLabelFunction";
 import MyUserRegistration from "./components/MyUserRegistration";
+import MyRegistrationClass from "./components/MyRegistrationClass";
+import MyNewReg from "./components/MyNewReg";
 
 function App() {
   const dte = new Date(2000, 4, 4);
@@ -32,7 +34,10 @@ function App() {
       <hr />
       <MyLabelFunction data={ssusers} ts={dte} ln={labelName}/> */}
 
-      <MyUserRegistration/>
+      {/* <MyUserRegistration/> */}
+
+      {/* <MyRegistrationClass/> */}
+      <MyNewReg/>
     </div>
     //React.createElement("div",{},React.createElement("h1",{className:'header'},"My First React-".concat(value)))
   );

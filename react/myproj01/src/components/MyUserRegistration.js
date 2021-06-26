@@ -2,10 +2,13 @@ import React,{useState} from 'react'
 
 export default function MyUserRegistration() {
 
+    //React hooks
     const [user,setUser] = useState({
         fnme:'',
         lnme:''
     });
+
+    const [submiting,setSubmiting] = useState(false);
 
     const handleOnChange = (event) => {
         const {name,value} = event.target;
