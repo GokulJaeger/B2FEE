@@ -11,6 +11,8 @@ export default class MyClassComponent extends Component {
       location: "cons",
       color: this.props.color,
     };
+
+    this.handleButtonOnClick = this.handleButtonOnClick.bind(this);
   }
 
   handleButtonOnClick = () => {
@@ -79,6 +81,8 @@ export default class MyClassComponent extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
+    document.title = "title".concat(new Date());
+    document.getElementById("test123").innerHTML = "Some data";
     if (this.props.input == prevProps.input) {
       // make ajax calls
       // Perform any other function
